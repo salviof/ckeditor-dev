@@ -91,6 +91,7 @@ var CKBUILDER_CONFIG = {
 		templates: 1,
 		toolbar: 1,
 		undo: 1,
+		placeholderSeletor: 0,
 		wysiwygarea: 1
 	}
 };
