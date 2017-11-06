@@ -6,7 +6,7 @@
 CKEDITOR.plugins.setLang( 'placeholderSeletor', 'pt-br', {
 	title: 'Informação dinâmica',
 	toolbar: 'Inserir Informação dinâmica',
-	name: 'Nome do Espaço Reservado',
-	invalidName: 'O espaço reservado não pode estar vazio e não pode conter nenhum dos seguintes caracteres:  [, ], <, >',
-	pathName: 'Espaço Reservado'
+	name: 'Escolha a Informação Dinânica',
+	invalidName: 'A informação dinâmica não pode conter os seguintes carcteres:  [, ], <, >',
+	pathName: 'Palavra-Chave'
 } );

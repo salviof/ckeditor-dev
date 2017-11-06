@@ -20,18 +20,20 @@
 
 		onLoad: function() {
 			// Register styles for placeholder widget frame.
-			CKEDITOR.addCss( '.cke_placeholder{background-color:#ff0}' );
+			CKEDITOR.addCss( '.cke_placeholder{background-color:#ff0} ' );
+            CKEDITOR.addCss( '.cke_button__createplaceholder{width:48px!important;}');
+            //CKEDITOR.addCss( '.cke_placeholder{background-color:#ff0}' );
 		},
 
 		init: function( editor ) {
-
+            
 			var lang = editor.lang.placeholderSeletor;
-
-			console.log(lang);
-
+            
+			//console.log(lang);
+            //console.log(this.path);
 			// Register dialog.
 			CKEDITOR.dialog.add( 'placeholderSeletor', this.path + 'dialogs/placeholderSeletor.js' );
-            editor.addContentsCss( this.path + 'styles/estilobotao.css' );
+           /// editor.addCss( this.path + '/styles/estilobotao.css' );
 
             
 			// Put ur init code here.
@@ -70,8 +72,8 @@
 		},
 
 		afterInit: function( editor ) {
-			var placeholderReplaceRegex = /\[\[([^\[\]])+\]\]/g;
-
+			var placeholderReplaceRegex = /\[\[([^\[\]])+\]\]/g;R
+            editor.addContentsCss( this.path + '/styles/estilobotao.css');
 			editor.dataProcessor.dataFilter.addRules( {
 				text: function( text, node ) {
 					var dtd = node.parent && CKEDITOR.dtd[ node.parent.name ];
