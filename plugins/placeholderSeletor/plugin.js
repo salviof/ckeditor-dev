@@ -72,7 +72,7 @@
 		},
 
 		afterInit: function( editor ) {
-			var placeholderReplaceRegex = /\[\[([^\[\]])+\]\]/g;R
+			var placeholderReplaceRegex = /\[\[([^\[\]])+\]\]/g;
             editor.addContentsCss( this.path + '/styles/estilobotao.css');
 			editor.dataProcessor.dataFilter.addRules( {
 				text: function( text, node ) {
